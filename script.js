@@ -10,7 +10,15 @@ let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 
 function getRandomCard() {
-    return Math.floor( Math.random() * 12 ) + 1;
+    let randomNumber = Math.floor( Math.random() * 12 ) + 1;
+    // Define os valores das cartas A para 11, e Valete, Queen e King para 10
+    if (randomNumber === 1) {
+        return 11;
+    } else if (randomNumber > 10) {
+        return 10;
+    } else {
+        return randomNumber;
+    }
 }
 
 function startGame() {
@@ -38,5 +46,6 @@ function renderGame() {
 function newCard() {
     let card = getRandomCard();
     sum += card;
+    cards.push(card);
     renderGame()
 }

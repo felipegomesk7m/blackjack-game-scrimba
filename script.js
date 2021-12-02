@@ -10,13 +10,6 @@ let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 let playerEl = document.getElementById("player-el")
 
-let player = {
-    name: "Felipe",
-    chips: 145
-}
-
-playerEl.textContent = player.name + ": $" + player.chips;
-
 function getRandomCard() {
     let randomNumber = Math.floor( Math.random() * 12 ) + 1;
     // Define os valores das cartas A para 11, e Valete, Queen e King para 10

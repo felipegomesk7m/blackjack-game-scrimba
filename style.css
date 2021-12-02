@@ -27,3 +27,11 @@ button {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
 }
+
+footer {
+    text-align: center;
+    background-color: #22272E;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+}
